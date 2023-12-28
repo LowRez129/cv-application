@@ -1,0 +1,10 @@
+.sidebar {
+    display: flex;
+    background-color: yellow;
+    width: 30%;
+}
+
+.sidebar > form {
+    display: flex;
+    flex-direction: column;
+}
