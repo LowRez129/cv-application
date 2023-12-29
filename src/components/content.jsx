@@ -11,7 +11,7 @@ export default function Content ({contacts={}, education={}, experience={}}) {
                 </div>
             </section>
             <section className='education'>
-                Education
+                {education.name}
             </section>
             <section className='experience'>
 

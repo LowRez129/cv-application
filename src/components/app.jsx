@@ -1,6 +1,6 @@
-import './app.css'
-import Sidebar from './components/sidebar.jsx'
-import Content from './components/content.jsx';
+import '../styles/app.css'
+import Sidebar from './sidebar.jsx'
+import Content from './content.jsx';
 import { useState } from 'react';
 
 export default function App () {
@@ -19,10 +19,15 @@ export default function App () {
     const [conctacts, setContacts] = useState(placeholder_contacts);
     const [education, setEducation] = useState(placeholder_education);
 
+
     return (
         <main>
-            <Sidebar conctacts={conctacts} setContacts={setContacts} placeholder_contacts={placeholder_contacts}/>
-            <Content contacts={conctacts} />
+            <Sidebar 
+                getter={[conctacts, education]} 
+                setter={[setContacts, setEducation]} 
+                placeholder={[placeholder_contacts, placeholder_education]}
+            />
+            <Content contacts={conctacts} education={education}/>
         </main>
     );
 }
