@@ -1,11 +1,21 @@
 import '../styles/content.css'
 
-export default function Content ({contacts}) {
+export default function Content ({contacts={}, education={}, experience={}}) {
     return (
-        <section className="preview">
-            {contacts.name} <br/>
-            {contacts.email} <br/>
-            {contacts.number}
+        <section className="content">
+            <section className='contacts'>
+                <div className='name'>{contacts.name}</div> 
+                <div className='contact-container'>
+                    <div>{contacts.email}</div>
+                    <div>{contacts.number}</div>
+                </div>
+            </section>
+            <section className='education'>
+                Education
+            </section>
+            <section className='experience'>
+
+            </section>
         </section>
     );
 }

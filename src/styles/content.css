@@ -1,6 +1,35 @@
-.preview {
+.content {
+    display: flex;
+    flex-direction: column;
     background-color: white;
     height: 1000px;
     width: 90%;
     margin: 1%;
+}
+
+.contacts {
+    background-color: yellow;
+    justify-content: center;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.education {
+    display: flex;
+    flex-direction: column;
+    background-color: wheat;
+    height: 100px;
+}
+
+.experience {
+    background-color: brown;
+    height: 100px;
 }
